@@ -1,18 +1,17 @@
 #include <stdio.h>
 /**
- * main - Prints numbers of base 10 starting from 0
+ * main - Prints numbers of base 10
  * Return: 0 (Success)
  */
 int main(void)
 {
-	int x;
+	int a;
 
-	x = 0;
-	while
-		(x < 10) {
-			putchar(x);
-			x++;
-		}
+	for (a = 0; a < 10; a++)
+		putchar((a % 10) + '0');
+
 	putchar('\n');
+
 	return (0);
 }
+
