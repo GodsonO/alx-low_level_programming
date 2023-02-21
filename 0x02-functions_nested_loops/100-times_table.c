@@ -20,7 +20,7 @@ void print_times_table(int n)
 				_putchar('0' + rep);
 			else if (rep < 10)
 			{
-				_putchar(' ');
+				_putchar(',');
 				_putchar(' ');
 				_putchar('0' + rep);
 			}
@@ -35,11 +35,6 @@ void print_times_table(int n)
 				_putchar('0' + rep / 100);
 				_putchar('0' + (rep - 100) / 10);
 				_putchar('0' + rep % 10);
-			}
-			if (y < x)
-			{
-				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
