@@ -19,6 +19,7 @@ int main(void)
 		if (x < 49)
 		{
 			printf(",");
+			printf(" ");
 		}
 		x++;
 	}
