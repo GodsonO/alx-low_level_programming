@@ -15,7 +15,7 @@ int main(void)
 		b = ab;
 		printf("%lu", ab);
 
-		if (x < 97)
+		if (x < 98)
 		{
 			printf(",");
 			printf(" ");
