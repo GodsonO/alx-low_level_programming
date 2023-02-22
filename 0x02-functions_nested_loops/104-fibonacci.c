@@ -5,36 +5,23 @@
  */
 int main(void)
 {
-	unsigned long int a;
-	unsigned long int b = 1;
-	unsigned long int c = 2;
-	unsigned long int l = 1000000000;
-	unsigned long int d;
-	unsigned long int e;
-	unsigned long int f;
-	unsigned long int g;
+	int x = 0;
+	long int a = 0, b = 1, ab;
 
-	printf("%lu", b);
-	for (a = 1; a < 91; a++)
+	while (x < 98)
 	{
-		printf(", %lu", c);
-		c += b;
-		b = c - b;
-	}
-	d = (b / 1);
-	e = (b % 1);
-	f = (c / 1);
-	g = (c % 1);
+		ab = a + b;
+		a = b;
+		b = ab;
+		printf("%lu", ab);
 
-	for (a = 92; a < 99; ++a)
-	{
-		printf(", %lu", f + (g / 1));
-		printf("%lu", g % 1);
-		f = f + d;
-		d = f - d;
-		g = g + e;
-		e = g - e;
+		if (x < 97)
+		{
+			printf(",");
+			printf(" ");
+		}
+		x++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
