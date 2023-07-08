@@ -4,7 +4,6 @@
  * make_hash_node - creates a new hash node
  * @key: key for the node
  * @value: for the node
- *
  * Return: the new node, or NULL on failure
  */
 hash_node_t *make_hash_node(const char *key, const char *value)
@@ -37,7 +36,6 @@ hash_node_t *make_hash_node(const char *key, const char *value)
  * @ht: hash table to add elemt to
  * @key: key for the data
  * @value: data to store
- *
  * Return: 1 if successful, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
